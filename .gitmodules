@@ -1,6 +1,3 @@
-[submodule "MX_Alps_Hybrid"]
-	path = MX_Alps_Hybrid
-	url = git@github.com:aaarsene/MX_Alps_Hybrid.git
 [submodule "Type-C.pretty"]
 	path = Type-C.pretty
 	url = git@github.com:ai03-2725/Type-C.pretty.git
@@ -10,3 +7,6 @@
 [submodule "fancy-kicad-stuff"]
 	path = fancy-kicad-stuff
 	url = git@github.com:mkbdfr/fancy-kicad-stuff.git
+[submodule "MX_19mm.pretty"]
+	path = MX_19mm.pretty
+	url = git@github.com:aaarsene/MX_19mm.pretty.git
