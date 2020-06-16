@@ -522,15 +522,11 @@ Wire Wire Line
 	4900 6400 4900 6600
 Connection ~ 4900 6600
 Wire Wire Line
-	6300 6600 6150 6600
-Wire Wire Line
 	6500 6600 6550 6600
 Text GLabel 6550 6500 2    50   Input ~ 0
 D-
 Text GLabel 6550 6600 2    50   Input ~ 0
 D+
-Wire Wire Line
-	6300 6500 5350 6500
 Wire Wire Line
 	6500 6500 6550 6500
 $Comp
@@ -545,12 +541,6 @@ F 3 "~" H 6400 6500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 4550 7100
-Connection ~ 5350 6500
-Wire Wire Line
-	5350 6500 5000 6500
-Connection ~ 6150 6600
-Wire Wire Line
-	6150 6600 4900 6600
 $Comp
 L power:VCC #PWR0116
 U 1 1 5EF4F905
@@ -568,7 +558,7 @@ U 1 1 5EF49C6E
 P 5800 6900
 F 0 "U2" H 5800 6611 60  0000 C CNN
 F 1 "PRTR5V0U2X" H 5800 6718 60  0000 C CNN
-F 2 "random-keyboard-parts:SKQGADE010" H 5800 6900 60  0001 C CNN
+F 2 "random-keyboard-parts:SOT143B" H 5800 6900 60  0001 C CNN
 F 3 "" H 5800 6900 60  0001 C CNN
 	1    5800 6900
 	-1   0    0    1   
@@ -576,11 +566,7 @@ $EndComp
 Wire Wire Line
 	5500 6850 5350 6850
 Wire Wire Line
-	5350 6850 5350 6500
-Wire Wire Line
 	6100 7100 4550 7100
-Wire Wire Line
-	6150 6850 6150 6600
 Wire Wire Line
 	6100 6850 6150 6850
 Wire Wire Line
@@ -621,4 +607,22 @@ U 5EFB701E
 F0 "matrix" 50
 F1 "matrix.sch" 50
 $EndSheet
+Text Label 5400 6500 0    50   ~ 0
+USB_N
+Text Label 5400 6600 0    50   ~ 0
+USB_P
+Wire Wire Line
+	5350 6850 5350 6600
+Connection ~ 5350 6600
+Wire Wire Line
+	5350 6600 6300 6600
+Wire Wire Line
+	4900 6600 5350 6600
+Wire Wire Line
+	6150 6850 6150 6500
+Connection ~ 6150 6500
+Wire Wire Line
+	6150 6500 6300 6500
+Wire Wire Line
+	5000 6500 6150 6500
 $EndSCHEMATC
