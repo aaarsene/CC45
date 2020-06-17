@@ -627,7 +627,7 @@ Wire Wire Line
 	5000 6500 6150 6500
 Text GLabel 2550 2150 2    50   Input ~ 0
 col6
-Text GLabel 2550 3250 2    50   Input ~ 0
+Text GLabel 2550 1850 2    50   Input ~ 0
 row2
 Text GLabel 2550 3850 2    50   Input ~ 0
 col12
@@ -651,13 +651,13 @@ Text GLabel 2550 2050 2    50   Input ~ 0
 col2
 Text GLabel 2550 1950 2    50   Input ~ 0
 col1
-Text GLabel 2550 1850 2    50   Input ~ 0
-col0
-Text GLabel 2550 3150 2    50   Input ~ 0
-row0
 Text GLabel 2550 3350 2    50   Input ~ 0
-row1
+col0
 Text GLabel 2550 3050 2    50   Input ~ 0
+row0
+Text GLabel 2550 3250 2    50   Input ~ 0
+row1
+Text GLabel 2550 3150 2    50   Input ~ 0
 row3
 NoConn ~ 2550 2650
 NoConn ~ 2550 2750

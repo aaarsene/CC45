@@ -1,4 +1,4 @@
-update=17/06/2020 12:21:03
+update=18/06/2020 00:54:44
 version=1
 last_client=kicad
 [general]
@@ -36,6 +36,7 @@ MinHoleToHole=0.25
 CopperEdgeClearance=0.01
 TrackWidth1=0.25
 TrackWidth2=0.2
+TrackWidth3=0.38
 ViaDiameter1=0.8
 ViaDrill1=0.4
 dPairWidth1=0.2
