@@ -1,4 +1,4 @@
-EESchema Schematic File Version 5
+EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -12,129 +12,7 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
-Comment5 ""
-Comment6 ""
-Comment7 ""
-Comment8 ""
-Comment9 ""
 $EndDescr
-$Comp
-L MCU_Microchip_ATmega:ATmega32U4-AU U1
-U 1 1 5EE82408
-P 1950 2950
-F 0 "U1" H 1550 1150 50  0000 C CNN
-F 1 "ATmega32U4-AU" H 1450 1050 50  0000 C CNN
-F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 1950 2950 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 1950 2950 50  0001 C CNN
-	1    1950 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0101
-U 1 1 5EE86CF5
-P 1950 1150
-F 0 "#PWR0101" H 1950 1000 50  0001 C CNN
-F 1 "+5V" H 1965 1323 50  0000 C CNN
-F 2 "" H 1950 1150 50  0001 C CNN
-F 3 "" H 1950 1150 50  0001 C CNN
-	1    1950 1150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1850 1150 1950 1150
-Connection ~ 1950 1150
-Wire Wire Line
-	1950 1150 2050 1150
-$Comp
-L power:GND #PWR0102
-U 1 1 5EE898B3
-P 1950 4750
-F 0 "#PWR0102" H 1950 4500 50  0001 C CNN
-F 1 "GND" H 1955 4577 50  0000 C CNN
-F 2 "" H 1950 4750 50  0001 C CNN
-F 3 "" H 1950 4750 50  0001 C CNN
-	1    1950 4750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1850 4750 1950 4750
-Connection ~ 1950 4750
-Text GLabel 1350 1650 0    50   Input ~ 0
-XTAL1
-Text GLabel 1350 1850 0    50   Input ~ 0
-XTAL2
-Text GLabel 1350 2450 0    50   Input ~ 0
-D+
-Text GLabel 1350 2550 0    50   Input ~ 0
-D-
-Text GLabel 1350 1450 0    50   Input ~ 0
-RESET
-$Comp
-L Device:R_Small R1
-U 1 1 5EE994D3
-P 2900 3550
-F 0 "R1" V 2704 3550 50  0000 C CNN
-F 1 "10k" V 2795 3550 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2900 3550 50  0001 C CNN
-F 3 "~" H 2900 3550 50  0001 C CNN
-	1    2900 3550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2800 3550 2550 3550
-$Comp
-L power:GND #PWR0103
-U 1 1 5EE9C6FC
-P 3200 3550
-F 0 "#PWR0103" H 3200 3300 50  0001 C CNN
-F 1 "GND" H 3205 3377 50  0000 C CNN
-F 2 "" H 3200 3550 50  0001 C CNN
-F 3 "" H 3200 3550 50  0001 C CNN
-	1    3200 3550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3200 3550 3000 3550
-$Comp
-L Device:C_Small C1
-U 1 1 5EE9E516
-P 1200 2950
-F 0 "C1" H 1292 2996 50  0000 L CNN
-F 1 "1u" H 1292 2905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1200 2950 50  0001 C CNN
-F 3 "~" H 1200 2950 50  0001 C CNN
-	1    1200 2950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1350 2750 1200 2750
-Wire Wire Line
-	1200 2750 1200 2850
-$Comp
-L power:GND #PWR0104
-U 1 1 5EE9F11B
-P 1200 3050
-F 0 "#PWR0104" H 1200 2800 50  0001 C CNN
-F 1 "GND" H 1205 2877 50  0000 C CNN
-F 2 "" H 1200 3050 50  0001 C CNN
-F 3 "" H 1200 3050 50  0001 C CNN
-	1    1200 3050
-	1    0    0    -1  
-$EndComp
-NoConn ~ 1350 2050
-$Comp
-L power:+5V #PWR0105
-U 1 1 5EEA243B
-P 1200 2250
-F 0 "#PWR0105" H 1200 2100 50  0001 C CNN
-F 1 "+5V" H 1215 2423 50  0000 C CNN
-F 2 "" H 1200 2250 50  0001 C CNN
-F 3 "" H 1200 2250 50  0001 C CNN
-	1    1200 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1200 2250 1350 2250
 $Comp
 L Device:C_Small C6
 U 1 1 5EEB6A45
@@ -198,94 +76,6 @@ F 3 " ~" H 1525 6350 50  0001 C CNN
 	1    2800 6900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2350 5350 2550 5350
-Wire Wire Line
-	2750 5350 3100 5350
-Wire Wire Line
-	2550 5550 2750 5550
-Wire Wire Line
-	2350 5550 2550 5550
-Wire Wire Line
-	2000 5550 2350 5550
-Wire Wire Line
-	2000 5350 2350 5350
-Wire Wire Line
-	2550 5350 2750 5350
-Wire Wire Line
-	2750 5550 3100 5550
-$Comp
-L Device:C_Small C5
-U 1 1 5EEC8453
-P 3100 5450
-F 0 "C5" H 3192 5496 50  0000 L CNN
-F 1 "10u" H 3192 5405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3100 5450 50  0001 C CNN
-F 3 "~" H 3100 5450 50  0001 C CNN
-	1    3100 5450
-	1    0    0    -1  
-$EndComp
-Connection ~ 2350 5550
-Connection ~ 2350 5350
-Connection ~ 2750 5350
-Connection ~ 2750 5550
-Connection ~ 2550 5550
-Connection ~ 2550 5350
-$Comp
-L Device:C_Small C4
-U 1 1 5EEC6344
-P 2750 5450
-F 0 "C4" H 2842 5496 50  0000 L CNN
-F 1 "0.1u" H 2842 5405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2750 5450 50  0001 C CNN
-F 3 "~" H 2750 5450 50  0001 C CNN
-	1    2750 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C2
-U 1 1 5F0D60A6
-P 2000 5450
-F 0 "C2" H 2092 5496 50  0000 L CNN
-F 1 "0.1u" H 2092 5405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2000 5450 50  0001 C CNN
-F 3 "~" H 2000 5450 50  0001 C CNN
-	1    2000 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0107
-U 1 1 5EEC1384
-P 2550 5550
-F 0 "#PWR0107" H 2550 5300 50  0001 C CNN
-F 1 "GND" H 2555 5377 50  0000 C CNN
-F 2 "" H 2550 5550 50  0001 C CNN
-F 3 "" H 2550 5550 50  0001 C CNN
-	1    2550 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C3
-U 1 1 5EEC1FAE
-P 2350 5450
-F 0 "C3" H 2442 5496 50  0000 L CNN
-F 1 "0.1u" H 2442 5405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2350 5450 50  0001 C CNN
-F 3 "~" H 2350 5450 50  0001 C CNN
-	1    2350 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0108
-U 1 1 5F0D60A5
-P 2550 5350
-F 0 "#PWR0108" H 2550 5200 50  0001 C CNN
-F 1 "+5V" H 2565 5523 50  0000 C CNN
-F 2 "" H 2550 5350 50  0001 C CNN
-F 3 "" H 2550 5350 50  0001 C CNN
-	1    2550 5350
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+5V #PWR0109
 U 1 1 5EEC086A
@@ -316,12 +106,6 @@ Text GLabel 3200 6900 2    50   Input ~ 0
 SCK
 Text GLabel 3200 7000 2    50   Input ~ 0
 RESET
-Text GLabel 2550 1550 2    50   Input ~ 0
-SCK
-Text GLabel 2550 1650 2    50   Input ~ 0
-MOSI
-Text GLabel 2550 1750 2    50   Input ~ 0
-MISO
 $Comp
 L Switch:SW_Push_Dual SW1
 U 1 1 5EEF04EA
@@ -601,12 +385,6 @@ F 3 "~" H 1400 5750 50  0001 C CNN
 	1    1400 5750
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 5200 2875 500  150 
-U 5EFB701E
-F0 "matrix" 50
-F1 "matrix.sch" 50
-$EndSheet
 Text Label 5400 6500 0    50   ~ 0
 USB_N
 Text Label 5400 6600 0    50   ~ 0
@@ -625,6 +403,240 @@ Wire Wire Line
 	6150 6500 6300 6500
 Wire Wire Line
 	5000 6500 6150 6500
+Connection ~ 2350 5425
+Wire Wire Line
+	2050 5425 2350 5425
+Connection ~ 2350 5225
+Wire Wire Line
+	2050 5225 2350 5225
+$Comp
+L Device:C_Small C8
+U 1 1 5EF1E407
+P 2050 5325
+F 0 "C8" H 2142 5371 50  0000 L CNN
+F 1 "0.1u" H 2142 5280 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2050 5325 50  0001 C CNN
+F 3 "~" H 2050 5325 50  0001 C CNN
+	1    2050 5325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 5225 2900 5225
+Wire Wire Line
+	3100 5225 3450 5225
+Wire Wire Line
+	2900 5425 3100 5425
+Wire Wire Line
+	2700 5425 2900 5425
+Wire Wire Line
+	2350 5425 2700 5425
+Wire Wire Line
+	2350 5225 2700 5225
+Wire Wire Line
+	2900 5225 3100 5225
+Wire Wire Line
+	3100 5425 3450 5425
+$Comp
+L Device:C_Small C5
+U 1 1 5EEC8453
+P 3450 5325
+F 0 "C5" H 3542 5371 50  0000 L CNN
+F 1 "10u" H 3542 5280 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3450 5325 50  0001 C CNN
+F 3 "~" H 3450 5325 50  0001 C CNN
+	1    3450 5325
+	1    0    0    -1  
+$EndComp
+Connection ~ 2700 5425
+Connection ~ 2700 5225
+Connection ~ 3100 5225
+Connection ~ 3100 5425
+Connection ~ 2900 5425
+Connection ~ 2900 5225
+$Comp
+L Device:C_Small C4
+U 1 1 5EEC6344
+P 3100 5325
+F 0 "C4" H 3192 5371 50  0000 L CNN
+F 1 "0.1u" H 3192 5280 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3100 5325 50  0001 C CNN
+F 3 "~" H 3100 5325 50  0001 C CNN
+	1    3100 5325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5F0D60A6
+P 2350 5325
+F 0 "C2" H 2442 5371 50  0000 L CNN
+F 1 "0.1u" H 2442 5280 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2350 5325 50  0001 C CNN
+F 3 "~" H 2350 5325 50  0001 C CNN
+	1    2350 5325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5EEC1384
+P 2900 5425
+F 0 "#PWR0107" H 2900 5175 50  0001 C CNN
+F 1 "GND" H 2905 5252 50  0000 C CNN
+F 2 "" H 2900 5425 50  0001 C CNN
+F 3 "" H 2900 5425 50  0001 C CNN
+	1    2900 5425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 5EEC1FAE
+P 2700 5325
+F 0 "C3" H 2792 5371 50  0000 L CNN
+F 1 "0.1u" H 2792 5280 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2700 5325 50  0001 C CNN
+F 3 "~" H 2700 5325 50  0001 C CNN
+	1    2700 5325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0108
+U 1 1 5F0D60A5
+P 2900 5225
+F 0 "#PWR0108" H 2900 5075 50  0001 C CNN
+F 1 "+5V" H 2915 5398 50  0000 C CNN
+F 2 "" H 2900 5225 50  0001 C CNN
+F 3 "" H 2900 5225 50  0001 C CNN
+	1    2900 5225
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 5200 2875 500  150 
+U 5EFB701E
+F0 "matrix" 50
+F1 "matrix.sch" 50
+$EndSheet
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-AU U1
+U 1 1 5EE82408
+P 1950 2950
+F 0 "U1" H 1550 1150 50  0000 C CNN
+F 1 "ATmega32U4-AU" H 1450 1050 50  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 1950 2950 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 1950 2950 50  0001 C CNN
+	1    1950 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 5EE86CF5
+P 1950 1150
+F 0 "#PWR0101" H 1950 1000 50  0001 C CNN
+F 1 "+5V" H 1965 1323 50  0000 C CNN
+F 2 "" H 1950 1150 50  0001 C CNN
+F 3 "" H 1950 1150 50  0001 C CNN
+	1    1950 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1150 1950 1150
+Connection ~ 1950 1150
+Wire Wire Line
+	1950 1150 2050 1150
+$Comp
+L power:GND #PWR0102
+U 1 1 5EE898B3
+P 1950 4750
+F 0 "#PWR0102" H 1950 4500 50  0001 C CNN
+F 1 "GND" H 1955 4577 50  0000 C CNN
+F 2 "" H 1950 4750 50  0001 C CNN
+F 3 "" H 1950 4750 50  0001 C CNN
+	1    1950 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 4750 1950 4750
+Connection ~ 1950 4750
+Text GLabel 1350 1650 0    50   Input ~ 0
+XTAL1
+Text GLabel 1350 1850 0    50   Input ~ 0
+XTAL2
+Text GLabel 1350 2450 0    50   Input ~ 0
+D+
+Text GLabel 1350 2550 0    50   Input ~ 0
+D-
+Text GLabel 1350 1450 0    50   Input ~ 0
+RESET
+$Comp
+L Device:R_Small R1
+U 1 1 5EE994D3
+P 2900 3550
+F 0 "R1" V 2704 3550 50  0000 C CNN
+F 1 "10k" V 2795 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2900 3550 50  0001 C CNN
+F 3 "~" H 2900 3550 50  0001 C CNN
+	1    2900 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 3550 2550 3550
+$Comp
+L power:GND #PWR0103
+U 1 1 5EE9C6FC
+P 3200 3550
+F 0 "#PWR0103" H 3200 3300 50  0001 C CNN
+F 1 "GND" H 3205 3377 50  0000 C CNN
+F 2 "" H 3200 3550 50  0001 C CNN
+F 3 "" H 3200 3550 50  0001 C CNN
+	1    3200 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3550 3000 3550
+$Comp
+L Device:C_Small C1
+U 1 1 5EE9E516
+P 1200 2950
+F 0 "C1" H 1292 2996 50  0000 L CNN
+F 1 "1u" H 1292 2905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1200 2950 50  0001 C CNN
+F 3 "~" H 1200 2950 50  0001 C CNN
+	1    1200 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 2750 1200 2750
+Wire Wire Line
+	1200 2750 1200 2850
+$Comp
+L power:GND #PWR0104
+U 1 1 5EE9F11B
+P 1200 3050
+F 0 "#PWR0104" H 1200 2800 50  0001 C CNN
+F 1 "GND" H 1205 2877 50  0000 C CNN
+F 2 "" H 1200 3050 50  0001 C CNN
+F 3 "" H 1200 3050 50  0001 C CNN
+	1    1200 3050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1350 2050
+$Comp
+L power:+5V #PWR0105
+U 1 1 5EEA243B
+P 1200 2250
+F 0 "#PWR0105" H 1200 2100 50  0001 C CNN
+F 1 "+5V" H 1215 2423 50  0000 C CNN
+F 2 "" H 1200 2250 50  0001 C CNN
+F 3 "" H 1200 2250 50  0001 C CNN
+	1    1200 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 2250 1350 2250
+Text GLabel 2550 1550 2    50   Input ~ 0
+SCK
+Text GLabel 2550 1650 2    50   Input ~ 0
+MOSI
+Text GLabel 2550 1750 2    50   Input ~ 0
+MISO
 Text GLabel 2550 2150 2    50   Input ~ 0
 col6
 Text GLabel 2550 1850 2    50   Input ~ 0
