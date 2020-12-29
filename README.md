@@ -2,7 +2,7 @@
 
 THIS IS A WORK IN PROGRESS
 
-[Interactive BOM](http://htmlpreview.github.io/?https://github.com/aaarsene/CC45/blob/v2/bom/ibom.html)
+[Interactive BOM](http://htmlpreview.github.io/?https://github.com/aaarsene/CC45/blob/master/bom/ibom.html)
 
 ## Supported layouts
 
