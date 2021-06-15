@@ -2,6 +2,8 @@
 
 THIS IS A WORK IN PROGRESS
 
+⚠️ **Switch spacing is 19mm** ⚠️
+
 [Interactive BOM](http://htmlpreview.github.io/?https://github.com/aaarsene/CC45/blob/master/bom/ibom.html)
 
 ## Supported layouts
